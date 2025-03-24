@@ -1,0 +1,47 @@
+.check-form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    gap: 20px;
+}
+.check-label{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.check-wrapper{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2PX solid black;
+    cursor: pointer;
+    background-position-x: center;
+    background-position-y: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+.check-input{
+    display: none;
+}
+.check-input:checked ~ .check-wrapper{
+    background-image:url("../images/paris-2024-olympics-soccer.jpg") ;
+    background-position: top;
+}
+.check-label:nth-child(2) .check-input:checked ~ .check-wrapper{
+    background-image:url("../images/volleyball.jfif") ;
+    background-position: top;
+}
+.check-label:nth-child(3) .check-input:checked ~ .check-wrapper{
+    background-image:url("../images/basketball.jfif") ;
+    background-position: top;
+}
+.check-label:nth-child(4) .check-input:checked ~ .check-wrapper{
+    background-image:url("../images/hokkey.jpg") ;
+    background-position: top;
+}
